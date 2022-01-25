@@ -7,6 +7,8 @@
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    font-weight: 500;
+    scroll-behavior: smooth; /* scorrimento fluido dei link all'interno della pagina */
 }
 
 /* CONTENITORI */
@@ -115,4 +117,18 @@ header .logo-header img{
     margin-left: 2rem;
     width: 70%;
     margin-bottom: -5rem;
+}
+
+.hero p {
+    margin: 2rem 0;
+}
+
+.hero svg {
+    width: 2rem;
+}
+
+/* MAIN */
+main {
+    height: 3000px;
+    padding-top: 10rem;
 }

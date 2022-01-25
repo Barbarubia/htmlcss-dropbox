@@ -6,16 +6,18 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* CONTENITORI */
 .container-900 {
     max-width: 900px;
+    margin: 0 auto;
 }
 
 .container-700 {
     max-width: 700px;
+    margin: 0 auto;
 }
 
 /* CLEARFIX PER ELEMENTI FLOAT */
@@ -35,13 +37,15 @@ html {
 
 /* HEADER */
 header {
+    width: 100%;
+    position: fixed;
     background-color: white;
-    line-height: 5rem;
+    line-height: 4rem;
 }
 
 header .logo-header {
     float: left;
-    padding: 0 3rem 0 1.5rem;
+    padding: 0 2.5rem 0 1rem;
 }
 
 header .logo-header img{
@@ -63,34 +67,41 @@ header .logo-header img{
 }
 
 .top-menu li {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 600;
     display: inline-block;
-    line-height: 5rem;
+    line-height: 4rem;
 }
 
 .top-menu a {
     display: inline-block;
-    line-height: 5rem;
+    line-height: 4rem;
     text-decoration: none;
     color: black;
     vertical-align: middle;
 }
 
 .top-menu-left li {
-    margin-right: 3rem;
+    margin-right: 2.5rem;
 }
 
 .top-menu-right li {
-    margin-left: 3rem;
+    margin-left: 2.5rem;
 }
 
 .start-button {
     float: right;
-    padding: 0 1.5rem 0 3rem;
+    padding: 0 1rem 0 2.5rem;
 }
 
 .start-button a {
     vertical-align: middle;
-    font-size: .9rem;
+    font-size: .8rem;
+}
+
+/* SEZIONE HERO */
+.hero {
+    padding-top: 10rem;
+    height: 200px;
+    background-color: #b4d0e7;
 }

@@ -10,13 +10,13 @@ html {
 }
 
 /* CONTENITORI */
-.container-900 {
-    max-width: 900px;
+.container-1000 {
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.container-700 {
-    max-width: 700px;
+.container-800 {
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -102,6 +102,17 @@ header .logo-header img{
 /* SEZIONE HERO */
 .hero {
     padding-top: 10rem;
-    height: 200px;
     background-color: #b4d0e7;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.hero img {
+    float: right;
+    margin-left: 2rem;
+    width: 70%;
+    margin-bottom: -5rem;
 }

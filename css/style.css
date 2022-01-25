@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth; /* scorrimento fluido dei link all'interno della pagina */
 }
 
-/* CONTENITORI */
+/* SELETTORI GENERALI */
 .container-1000 {
     max-width: 1000px;
     margin: 0 auto;
@@ -20,6 +20,11 @@ html {
 .container-800 {
     max-width: 800px;
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* CLEARFIX PER ELEMENTI FLOAT */
@@ -31,10 +36,14 @@ html {
 
 /* BOTTONI */
 .button {
-    background: #0061ff;
+    background-color: #0061ff;
     padding: .5rem 1.5rem;
     color: white;
     text-decoration: none;
+}
+
+.button:hover {
+    background-color: #3b85ff;
 }
 
 /* HEADER */
@@ -50,6 +59,11 @@ header .logo-header {
     line-height: 4rem;
     float: left;
     padding: 0 2.5rem 0 1rem;
+}
+
+header .logo-header a{
+    line-height: 4rem;
+    display: inline-block;
 }
 
 header .logo-header img{
@@ -138,6 +152,35 @@ header .logo-header img{
 }
 
 /* MAIN */
-main {
-    padding-top: 10rem;
+
+#main {
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+
+/*SEZIONE SCELTA PIANO */
+
+/* RADIO BUTTONS */
+.scelta-fatturazione input {
+    vertical-align: middle;
+}
+
+.scelta-fatturazione label {
+    margin-right: 1rem;
+}
+
+.columns {
+    margin: 2rem -1.5rem;
+}
+.narrow-column {
+    float: left;
+    width: calc((100% - 9rem) / 3);
+    margin: 0 1.5rem;
+    border: 1px solid lightgrey;
+    text-align: center;
+}
+
+.narrow-column svg {
+    height: 1rem;
+    vertical-align: middle;
 }

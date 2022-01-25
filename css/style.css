@@ -42,10 +42,12 @@ header {
     width: 100%;
     position: fixed;
     background-color: white;
-    line-height: 4rem;
+    border-bottom: 1px solid lightgrey;
+    z-index: 9
 }
 
 header .logo-header {
+    line-height: 4rem;
     float: left;
     padding: 0 2.5rem 0 1rem;
 }
@@ -66,6 +68,7 @@ header .logo-header img{
 .top-menu ul {
     list-style: none;
     font-size: 0;
+    display: inline-block;
 }
 
 .top-menu li {
@@ -73,6 +76,11 @@ header .logo-header img{
     font-weight: 600;
     display: inline-block;
     line-height: 4rem;
+}
+
+.top-menu li:hover {
+    border-bottom: 2px solid #3c3c3c;
+    margin-bottom: -2px;
 }
 
 .top-menu a {
@@ -93,6 +101,7 @@ header .logo-header img{
 
 .start-button {
     float: right;
+    line-height: 4rem;
     padding: 0 1rem 0 2.5rem;
 }
 
@@ -117,6 +126,7 @@ header .logo-header img{
     margin-left: 2rem;
     width: 70%;
     margin-bottom: -5rem;
+    filter: drop-shadow(.5rem .5rem .5rem rgba(0,0,0,.5)); /* aggiunta un po' più di ombra anche se già presente nella png originale */
 }
 
 .hero p {
@@ -129,6 +139,5 @@ header .logo-header img{
 
 /* MAIN */
 main {
-    height: 3000px;
     padding-top: 10rem;
 }

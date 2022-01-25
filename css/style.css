@@ -3,3 +3,94 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+/* CONTENITORI */
+.container-900 {
+    max-width: 900px;
+}
+
+.container-700 {
+    max-width: 700px;
+}
+
+/* CLEARFIX PER ELEMENTI FLOAT */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* BOTTONI */
+.button {
+    background: #0061ff;
+    padding: .5rem 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    line-height: 5rem;
+}
+
+header .logo-header {
+    float: left;
+    padding: 0 3rem 0 1.5rem;
+}
+
+header .logo-header img{
+    height: 1.6rem;
+    vertical-align: middle;
+}
+
+.top-menu-left {
+    float: left;
+}
+
+.top-menu-right {
+    float: right;
+}
+
+.top-menu ul {
+    list-style: none;
+    font-size: 0;
+}
+
+.top-menu li {
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 5rem;
+}
+
+.top-menu a {
+    display: inline-block;
+    line-height: 5rem;
+    text-decoration: none;
+    color: black;
+    vertical-align: middle;
+}
+
+.top-menu-left li {
+    margin-right: 3rem;
+}
+
+.top-menu-right li {
+    margin-left: 3rem;
+}
+
+.start-button {
+    float: right;
+    padding: 0 1.5rem 0 3rem;
+}
+
+.start-button a {
+    vertical-align: middle;
+    font-size: .9rem;
+}

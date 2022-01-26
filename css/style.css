@@ -19,7 +19,7 @@ html {
 
 .container-800 {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 
 .container-800 > h2 {
@@ -39,6 +39,8 @@ html {
     position: relative;
 }
 
+
+
 /* CLEARFIX PER ELEMENTI FLOAT */
 .clearfix::after {
     content: "";
@@ -56,6 +58,16 @@ html {
 
 .button:hover {
     background-color: #3b85ff;
+}
+
+.button-white {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.button-white:hover {
+    background-color: #eeeeee;
 }
 
 /* HEADER */
@@ -179,6 +191,9 @@ header .logo-header img{
 }
 
 /*SEZIONE SCELTA PIANO */
+.scelta-piano {
+    margin-top: 0;
+}
 
 /* RADIO BUTTONS */
 .scelta-fatturazione input {
@@ -325,6 +340,25 @@ header .logo-header img{
     font-weight: 800;
 }
 
+/* SEZIONE TROVA UN PARTNER */
+
+.trova-partner img {
+    width: 50%;
+    float: left;
+}
+
+.trova-partner-text {
+    width: 50%;
+    float:left;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+.trova-partner-text p {
+    margin: 2rem 0;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -375,5 +409,9 @@ footer hr {
     padding: 3rem 0 2rem 0;
     font-size: .8rem;
     color: grey;
+}
+
+.language-selector i {
+    margin-right: .3rem;
 }
 

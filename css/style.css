@@ -35,6 +35,10 @@ html {
     text-decoration: none;
 }
 
+.position-relative {
+    position: relative;
+}
+
 /* CLEARFIX PER ELEMENTI FLOAT */
 .clearfix::after {
     content: "";
@@ -189,18 +193,18 @@ header .logo-header img{
     margin: 2rem -.5rem;
 }
 
-.column .title-column {
+.box-planes .title-column {
     line-height: 2rem;
     border-bottom: 1px solid lightgrey;
     text-align: center;
 }
 
-.column svg {
+.box-planes svg {
     height: 1rem;
     vertical-align: middle;
 }
 
-.column span {
+.box-planes span {
     vertical-align: middle;
 }
 
@@ -211,9 +215,23 @@ header .logo-header img{
     border: 1px solid lightgrey;
 }
 
-.narrow-column .content-column {
-    padding: 1rem 1rem 5rem 1rem;
+.wide-column {
+    width: 100%;
+    border: 1px solid lightgrey;
 }
+
+.content-column {
+    padding: 1rem;
+}
+
+/* .narrow-column .content-column {
+    padding-bottom: 5rem;
+} */
+
+.narrow-column {
+    min-height: 800px;
+}
+
 
 .content-column ul {
     list-style: none;
@@ -230,11 +248,11 @@ header .logo-header img{
 }
 
 .content-column h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .content-column h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .content-column span {
@@ -244,6 +262,20 @@ header .logo-header img{
 
 .content-column .centered {
     text-align: center;
+}
+
+.wide-column .content-column {
+    padding-right: 30%;
+}
+
+.wide-column .content-column .top-right-corner {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+}
+
+.wide-column .content-column p {
+    margin-bottom: 0;
 }
 
 /* LISTE CON ICONE PRESE DA FONT AWESOME INSERITE LINKANDO LA LIBRERIA CDN NELL'HEAD DELL'HTML E METTENDO LE ICONE PRIMA DEL TESTO DELLA LISTA SFRUTTANDO IL SELETTORE BEFORE */

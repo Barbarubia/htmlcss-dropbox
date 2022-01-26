@@ -358,6 +358,27 @@ header .logo-header img{
     margin: 2rem 0;
 }
 
+/* SEZIONE FEATURES */
+.features {
+    margin: 0 -1rem;
+}
+
+.feature-box {
+    float: left;
+    width: calc((100% - 6rem) / 3);
+    height: 450px;
+    overflow: hidden;
+    margin: 0 1rem;
+}
+
+.feature-box img {
+    width: 100%;
+}
+
+.feature-box p {
+    padding: 1rem 0;
+}
+
 
 /* FOOTER */
 

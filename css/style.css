@@ -201,3 +201,21 @@ header .logo-header img{
     margin: 0 1.5rem;
     border: 1px solid lightgrey;
 }
+
+.narrow-column .content-column {
+    padding: 1rem;
+}
+
+.content-column ul {
+    list-style: none;
+}
+
+.content-column li {
+    position: relative;
+}
+
+.content-column li .text-after-icon {
+    position: absolute;
+    display: inline;
+    left: 2rem;
+}

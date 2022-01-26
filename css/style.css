@@ -22,9 +22,17 @@ html {
     margin: 0 auto;
 }
 
-h2 {
+.container-800 > h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.link-no-button {
+    color: #0061ff;
+}
+
+.link-no-button:hover {
+    text-decoration: none;
 }
 
 /* CLEARFIX PER ELEMENTI FLOAT */
@@ -63,7 +71,6 @@ header .logo-header {
 
 header .logo-header a{
     line-height: 4rem;
-    display: inline-block;
 }
 
 header .logo-header img{
@@ -73,10 +80,12 @@ header .logo-header img{
 
 .navbar-left {
     float: left;
+    line-height: 4rem;
 }
 
 .navbar-right {
     float: right;
+    line-height: 4rem;
 }
 
 .top-menu ul {
@@ -94,10 +103,10 @@ header .logo-header img{
 
 .top-menu li:hover {
     border-bottom: 2px solid #3c3c3c;
-    margin-bottom: -2px;
 }
 
 .top-menu a {
+    display: inline-block;
     line-height: 4rem;
     text-decoration: none;
     color: black;
@@ -177,7 +186,7 @@ header .logo-header img{
 }
 
 .column {
-    margin: 2rem -1.5rem;
+    margin: 2rem -.5rem;
 }
 
 .column .title-column {
@@ -197,25 +206,89 @@ header .logo-header img{
 
 .narrow-column {
     float: left;
-    width: calc((100% - 9rem) / 3);
-    margin: 0 1.5rem;
+    width: calc((100% - 3rem) / 3);
+    margin: 0 .5rem;
     border: 1px solid lightgrey;
 }
 
 .narrow-column .content-column {
-    padding: 1rem;
+    padding: 1rem 1rem 5rem 1rem;
 }
 
 .content-column ul {
     list-style: none;
 }
 
-.content-column li {
-    position: relative;
+.content-column p {
+    margin: 2rem 0;
 }
 
-.content-column li .text-after-icon {
+.content-column hr {
+    width: 30%;
+    margin: 2rem 0;
+    border: 1px solid lightgrey;
+}
+
+.content-column h1{
+    font-size: 1.5rem;
+}
+
+.content-column h2 {
+    font-size: 1.3rem;
+}
+
+.content-column span {
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.content-column .centered {
+    text-align: center;
+}
+
+/* LISTE CON ICONE PRESE DA FONT AWESOME INSERITE LINKANDO LA LIBRERIA CDN NELL'HEAD DELL'HTML E METTENDO LE ICONE PRIMA DEL TESTO DELLA LISTA SFRUTTANDO IL SELETTORE BEFORE */
+.content-column ul {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.content-column li {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.list-icon::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    line-height: 1.5rem;
     position: absolute;
-    display: inline;
-    left: 2rem;
+    left: 0;
+}
+
+.list-icon-user::before {
+    content: "\f007";
+}
+
+.list-icon-user-plus::before {
+    content: "\f234";
+    font-weight: 800;
+}
+
+.list-icon-folder::before {
+    content: "\f07b";
+}
+
+.list-icon-pencil::before {
+    content: "\f303";
+    font-weight: 800;
+}
+
+.list-icon-smile::before {
+    content: "\f118";
+}
+
+.list-icon-check::before {
+    content: "\f00c";
+    color: #0061ff;
+    font-weight: 800;
 }

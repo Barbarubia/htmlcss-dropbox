@@ -379,6 +379,52 @@ header .logo-header img{
     padding: 1rem 0;
 }
 
+/* SEZIONE DOMANDE FREQUENTI */
+
+.faq hr {
+    width: 100%;
+    color: grey;
+}
+
+.faq h3 {
+    font-size: 1.1rem;
+    padding: 1.5rem 0;
+}
+
+.faq p {
+    color: grey;
+}
+
+.faq .question-row {
+    position: relative;
+}
+
+.faq .question-row:hover {
+    padding-bottom: 1.5rem;
+}
+
+.faq .question-row .question::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: 2rem;
+}
+
+.faq .question-row .answer {
+    display: none;
+}
+
+.faq .question-row:hover .answer {
+    display: inline;
+}
+
+.faq .question-row:hover .question::after {
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: 2rem;
+}
+
 
 /* FOOTER */
 

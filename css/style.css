@@ -52,7 +52,11 @@ html {
     width: 50%
 }
 
-
+.top-right-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
 /* CLEARFIX PER ELEMENTI FLOAT */
 .clearfix::after {
@@ -80,6 +84,16 @@ html {
 }
 
 .button-white:hover {
+    background-color: #eeeeee;
+}
+
+.button-white-no-border {
+    background-color: white;
+    color: black;
+    padding: .5rem 4rem;
+}
+
+.button-white-no-border:hover {
     background-color: #eeeeee;
 }
 
@@ -296,8 +310,6 @@ header .logo-header img{
 }
 
 .wide-column .content-column .top-right-corner {
-    position: absolute;
-    top: 0;
     right: 1rem;
 }
 
@@ -393,7 +405,15 @@ header .logo-header img{
 
 /* SEZIONE RECENSIONI CLIENTI */
 
-.customers-reviews .column-half h2 {
+
+
+/* SEZIONE INIZIA PROVA GRATUITA */
+
+.start-trial {
+    padding: 2rem 0;
+}
+
+.start-trial .column-half h2 {
     font-size: 2.3rem;
     color: #61082b;
 }

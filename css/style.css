@@ -405,6 +405,31 @@ header .logo-header img{
 
 /* SEZIONE RECENSIONI CLIENTI */
 
+.customers .side-box {
+    float: left;
+    width: 30%;
+    background: red;
+    height: 350px;
+}
+
+.customers .center-box {
+    float: left;
+    width: 40%;
+    padding: 2.5rem;
+    background-color: #f5f5f5;
+    overflow: auto;
+    height: 350px;
+}
+
+.customers .center-box img {
+    height: 2.5rem;
+}
+
+.customers .center-box hr {
+    margin: 2rem 0;
+    width: 4rem;
+    color: lightgrey;
+}
 
 
 /* SEZIONE INIZIA PROVA GRATUITA */

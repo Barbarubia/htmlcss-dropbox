@@ -12,6 +12,11 @@ html {
 }
 
 /* SELETTORI GENERALI */
+
+.container-full {
+    width: 100%;
+}
+
 .container-1000 {
     max-width: 1000px;
     margin: 0 auto;
@@ -27,6 +32,10 @@ html {
     margin-bottom: 2rem;
 }
 
+.background-blue {
+    background-color: #b4d0e7;
+}
+
 .link-no-button {
     color: #0061ff;
 }
@@ -37,6 +46,10 @@ html {
 
 .position-relative {
     position: relative;
+}
+
+.column-half {
+    width: 50%
 }
 
 
@@ -159,7 +172,6 @@ header .logo-header img{
 /* SEZIONE HERO */
 .hero {
     padding-top: 10rem;
-    background-color: #b4d0e7;
 }
 
 .hero h1 {
@@ -379,6 +391,13 @@ header .logo-header img{
     padding: 1rem 0;
 }
 
+/* SEZIONE RECENSIONI CLIENTI */
+
+.customers-reviews .column-half h2 {
+    font-size: 2.3rem;
+    color: #61082b;
+}
+
 /* SEZIONE DOMANDE FREQUENTI */
 
 .faq hr {
@@ -481,4 +500,3 @@ footer hr {
 .language-selector i {
     margin-right: .3rem;
 }
-

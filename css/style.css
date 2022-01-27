@@ -182,6 +182,7 @@ header .logo-header img{
 
 .show-submenu:hover .submenu {
     display: block;
+    padding: 1rem;
     position: absolute;
     left: -1.5rem;
     background-color: white;
@@ -190,13 +191,16 @@ header .logo-header img{
 }
 
 .submenu li:hover {
-    display: inline-block;
     border: none;
-    background-color: lightgrey;
+    background-color: #eeeeee;
 }
 
 .show-submenu:hover .submenu li {
+    margin: 0;
+    display: block;
     font-size: .8rem;
+    padding: 0 1.5rem;
+    text-decoration: none;
 }
 
 /* SEZIONE HERO */

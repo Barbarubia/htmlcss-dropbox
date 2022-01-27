@@ -100,11 +100,15 @@ html {
 /* HEADER */
 header {
     width: 100%;
-    line-height: 4rem;
+    height: 4rem;
     position: fixed;
     background-color: white;
     border-bottom: 1px solid lightgrey;
     z-index: 9;
+}
+
+header > * {
+    line-height: calc(4rem - 4px);
 }
 
 header .logo-header {
@@ -182,9 +186,9 @@ header .logo-header img{
 
 .show-submenu:hover .submenu {
     display: block;
-    padding: 1rem;
     position: absolute;
     left: -1.5rem;
+    top: 4rem;
     background-color: white;
     width: 200px;
     z-index: -1;

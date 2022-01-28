@@ -126,7 +126,6 @@
             top: 0;
             background-color: white;
             border-bottom: 1px solid lightgrey;
-            z-index: 9;
         }
 
         header > * {
@@ -178,7 +177,7 @@
             display: inline-block;
         }
 
-        .top-menu-left li {
+        .top-menu-left li:not(:last-child) {
             margin-right: 2.5rem;
         }
 
@@ -186,7 +185,7 @@
             display: inline-block;
         }
 
-        .top-menu-right li {
+        .top-menu-right li:not(:first-child) {
             margin-left: 2.5rem;
         }
 
@@ -213,7 +212,6 @@
             top: 5rem;
             background-color: white;
             width: 200px;
-            z-index: -1;
         }
 
         .submenu li:hover {

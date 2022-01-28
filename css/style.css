@@ -348,11 +348,11 @@
             border: 1px solid lightgrey;
         }
 
-        .content-column h1{
+        .content-column h2{
             font-size: 1.3rem;
         }
 
-        .content-column h2 {
+        .content-column h3 {
             font-size: 1.1rem;
         }
 

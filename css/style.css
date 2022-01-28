@@ -122,6 +122,7 @@
 
         header {
             width: 100%;
+            min-width: 1000px; /* evita che restringendo la pagina la parte dx del menu vada a capo. Utilizzando overflow: hidden il sottomenu non viene visualizzato neanche a schermo pieno */
             height: 5rem;
             position: fixed;
             top: 0;

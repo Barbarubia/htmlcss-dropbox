@@ -6,9 +6,13 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     scroll-behavior: smooth; /* scorrimento fluido dei link all'interno della pagina */
+}
+
+body {
+    margin-top: 5rem;
 }
 
 /* SELETTORI GENERALI */
@@ -22,12 +26,12 @@ html {
     margin: 0 auto;
 }
 
-.container-800 {
-    max-width: 800px;
+.container-850 {
+    max-width: 850px;
     margin: 5rem auto;
 }
 
-.container-800 > h2 {
+.container-850 > h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -100,15 +104,16 @@ html {
 /* HEADER */
 header {
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     position: fixed;
+    top: 0;
     background-color: white;
     border-bottom: 1px solid lightgrey;
     z-index: 9;
 }
 
 header > * {
-    line-height: calc(4rem - 4px);
+    line-height: calc(5rem - 4px);
 }
 
 header .logo-header {
@@ -188,7 +193,7 @@ header .logo-header img{
     display: block;
     position: absolute;
     left: -1.5rem;
-    top: 4rem;
+    top: 5rem;
     background-color: white;
     width: 200px;
     z-index: -1;
@@ -209,12 +214,12 @@ header .logo-header img{
 
 /* SEZIONE HERO */
 .hero {
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
 .hero h1 {
-    font-size: 4rem;
-    margin-bottom: 4rem;
+    font-size: 4.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .hero img {
@@ -241,11 +246,7 @@ header .logo-header img{
 }
 
 /*SEZIONE SCELTA PIANO */
-.scelta-piano {
-    margin-top: 0;
-}
-
-/* RADIO BUTTONS */
+/* radio buttons */
 .scelta-fatturazione input {
     vertical-align: middle;
 }
